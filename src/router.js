@@ -10,16 +10,25 @@ const router = createRouter({
         {
             path: '/',
             name: 'login',
+            meta: {
+                title: 'Login',
+            },
             component: Login,
         },
         {
             path: '/books',
             name: 'book-list',
+            meta: {
+                title: 'Book List',
+            },
             component: BookList,
         },
         {
             path: '/books/:id',
             name: 'book-details',
+            meta: {
+                title: 'Book Details',
+            },
             component: BookDetails,
         },
     ]
